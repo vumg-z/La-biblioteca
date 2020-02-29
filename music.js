@@ -16,7 +16,7 @@ const randomNumber = (max, min) => {
 const music = () => {
   const section = document.getElementById("section");
 
-  for (let i = 0; i<20; i++) {
+  for (let i = 0; i<18; i++) {
 
     let node = document.createElement("iframe");
     node.setAttribute("src", `${data[randomNumber(data.length, 0)]}`);
