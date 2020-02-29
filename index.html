@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music</title>
+  </head>
+  <body>
+    <section id="section"></section>
+    <script type="module" src="./music.js"></script>
+    <style>
+      section {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+        align-items: center;
+      }
+      body {
+        background-color: black;
+      }
+      @media (max-width: 1700px) {
+        section {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      @media (max-width: 1380px) {
+        section {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (max-width: 1050px) {
+        section {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 700px) {
+        section {
+          grid-template-columns: repeat(1, 1fr);
+          justify-items: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </body>
+</html>
