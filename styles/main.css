@@ -1,0 +1,39 @@
+.square {
+  height: 20em;
+  width: 14em;
+  background-color: #2e2e2e;
+  position: relative;
+  display: inline-block;
+  border-radius: 0.1em;
+  margin: 1em .1em;
+  -webkit-animation: square-animation 1s infinite alternate;
+          animation: square-animation 1s infinite alternate;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  visibility: initial;
+  position: relative;
+}
+
+@-webkit-keyframes square-animation {
+  from {
+    background-color: #1b1b1b;
+  }
+  to {
+    background-color: #252525;
+  }
+}
+
+@keyframes square-animation {
+  from {
+    background-color: #1b1b1b;
+  }
+  to {
+    background-color: #252525;
+  }
+}
+/*# sourceMappingURL=main.css.map */

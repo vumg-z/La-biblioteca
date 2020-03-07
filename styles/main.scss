@@ -1,0 +1,28 @@
+.square {
+  height: 20em;
+  width: 14em;
+  background-color: rgb(46, 46, 46);
+  position: relative;
+  display: inline-block;
+  border-radius: 0.1em;
+  margin: 1em .1em;
+  animation: square-animation 1s infinite alternate;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  visibility: initial;
+  position: relative;
+}
+
+@keyframes square-animation {
+  from {
+    background-color: rgb(27, 27, 27);
+  }
+  to {
+    background-color: rgb(37, 37, 37);
+  }
+}
