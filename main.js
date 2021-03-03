@@ -55,11 +55,14 @@ const showMusic = () => {
   }
 };
 
+
+setSquares();
+getMusic();
+
 window.onload = () => {
   // once all the data is loaded
   hideSquares();
   showMusic();
 };
 
-setSquares();
-getMusic();
+
